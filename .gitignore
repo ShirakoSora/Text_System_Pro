@@ -1,0 +1,5 @@
+/target/
+/build/
+/.vscode/
+*.log
+__pycache__/

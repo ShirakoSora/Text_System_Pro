@@ -1,0 +1,19 @@
+[package]
+name = "text-system"
+version = "0.1.0"
+edition = "2024"
+description = "An original x86_64 UEFI-bootable kernel experiment."
+license = "MIT"
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+name = "text-kernel"
+path = "src/bin/kernel.rs"
+test = false
+bench = false
+doctest = false
+
+[profile.release]
+panic = "abort"
